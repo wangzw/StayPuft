@@ -20,11 +20,6 @@ This theme is being used in my [blog](http://davidlecina.com/).
 *  ["Welcome to Ghost" post](http://davidlecina.com/blog/welcome-to-ghost/).
 *  [Prism demo](http://davidlecina.com/blog/prism-demo/).
 
-## Discussion
-
-* The appropriate place to report problems is the [Issues section](https://github.com/dlecina/StayPuft/issues).
-* To discuss other topics, please find an appropriate post in my blog's [Staypuft tag](http://davidlecina.com/blog/tag/staypuft/) and post a comment there.
-
 ## Compatibility
 
 **The current StayPuft version is 1.3.5, is tested against Ghost 0.11.4 and is expected to work with Ghost 0.9.0.**
@@ -45,7 +40,15 @@ If the process fails, try [installing the theme manually](https://www.ghostforbe
 
 ## FAQ
 
-1. **How do I display an excerpt instead of full posts on the frontpage?**
+1. **Where should I report issues or request a new feature?**
+
+  The appropriate place to report issues or request new features is the [Issues section](https://github.com/dlecina/StayPuft/issues).
+
+2. **Where should I discuss other topics?**
+
+  To discuss other topics, please find an appropriate post in my blog's [Staypuft tag](http://davidlecina.com/blog/tag/staypuft/) and post a comment there.
+
+3. **How do I display an excerpt instead of full posts on the frontpage?**
 
   This is [an](https://github.com/dlecina/StayPuft/issues/2) [often](https://github.com/dlecina/StayPuft/issues/13) [requested](https://github.com/dlecina/StayPuft/issues/18) [feature](https://github.com/dlecina/StayPuft/pull/21) and one that is not part of the theme _by design_. That being said, it is very easy to customize the theme to show excerpts and a Read More link:
 
