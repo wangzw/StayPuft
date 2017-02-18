@@ -45,6 +45,16 @@ If the current version of StayPuft is not compatible with the version of Ghost y
 
 If the process fails, try [installing the theme manually](https://www.ghostforbeginners.com/how-to-install-a-ghost-theme/#uploadmanually).
 
+## FAQ
+
+1. **How do I display an excerpt instead of full posts on the frontpage?**
+
+  This is [an](https://github.com/dlecina/StayPuft/issues/2) [often](https://github.com/dlecina/StayPuft/issues/13) [requested](https://github.com/dlecina/StayPuft/issues/18) [feature](https://github.com/dlecina/StayPuft/pull/21) and one that is not part of the theme _by design_. That being said, it is very easy to customize the theme to show excerpts and a Read More link:
+
+  * Open `partials/loop.hbs`.
+  * Replace `{{content}}` with `{{excerpt}}`.
+  * Add a Read More link wherever you want with `<a href="{{url}}">Read More</a>`.
+
 ## Copyright & License
 
 Copyright (c) 2013-2017 Ghost Foundation - Released under the [MIT license](LICENSE). (Original)  
