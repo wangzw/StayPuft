@@ -37,9 +37,9 @@
 
 <body class="{{body_class}}">
 
-    {{!-- Sidebar --}}
-    <div id="sidebar" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-        <div id="sidebar-content" class="inner">
+    {{!-- Header --}}
+    <header id="site-header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+        <div id="site-header-content" class="inner">
             {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
             <h2 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
             <h3 class="blog-description">{{@blog.description}}</h3>
@@ -48,7 +48,20 @@
             <form id="search">
                 <input id="search-field" placeholder="Search"/>
             </form>
+        </div>
+    </header>
 
+    {{!-- Main Content --}}
+    <main>
+        <div class="main-inner">
+            <section id="search-results"></section>
+            {{{body}}}
+        </div>
+    </main>
+
+    {{!-- Sidebar --}}
+    <div id="sidebar">
+        <div id="sidebar-content" class="inner">
             {{!-- The blog navigation links --}}
             <div id="sidebar-links">
                 <ul id="subscription-links">
@@ -74,14 +87,6 @@
             </footer>
         </div>
     </div>
-
-    {{!-- Main Content --}}
-    <main>
-        <div class="main-inner">
-            <section id="search-results"></section>
-            {{{body}}}
-        </div>
-    </main>
 
     {{!-- Scripts --}}
 

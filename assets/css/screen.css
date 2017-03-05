@@ -482,11 +482,6 @@ button {
    4. General - The main styles for the the theme
    ========================================================================== */
 
-#sidebar-content {
-    position: relative;
-    top: 4rem;
-}
-
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 .blog-logo img {
     display: block;
@@ -661,17 +656,27 @@ button {
     line-height: 1.5em;
 }
 
-#sidebar
+#sidebar, #site-header
 {
     position: fixed;
-    top: 0px;
     left: 0px;
     width: 320px;
-    height: 100vh;
     z-index: 100;
     background-color: #22313F;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    overflow-y: auto;
+    overflow-y: hidden;
+}
+
+#site-header
+{
+    top: 0;
+    height: 366px;
+}
+
+#sidebar
+{
+    top: 366px;
+    height: 100%;
 }
 
 main
@@ -1551,17 +1556,13 @@ main
         height: 128px;
     }
 
-    #sidebar {
+    #sidebar, #site-header {
         position: relative;
         text-align: center;
         width: 100%;
         height: auto;
         padding: 16px 0px;
-    }
-
-    #sidebar-content {
-        position: relative:;
-        top: 0px;
+        top: 0;
     }
 
     main {
@@ -1577,7 +1578,11 @@ main
         display: inline-block;
         margin: 0px 4px;
     }
-    
+
+    .pagination {
+        margin: 0;
+    }
+
 }
 
 /* ========================================================================== */
