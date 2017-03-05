@@ -703,7 +703,7 @@ main
 
 #search input
 {
-    width: 100%;
+    width: auto;
     font-size: 0.8em;
     border: none;
     border-radius: 12px;
@@ -712,14 +712,13 @@ main
     padding: 1px 30px 1px 10px;
 }
 
-#search:before {
+#search:after {
     color: #9EABB3;
     font-family: 'FontAwesome';
     content: "\f002"; /* fa-search */
-    font-size: 14px;
-    margin-top: 1px;
-    right: 10px;
-    position: absolute; /* must be set to absolute */
+    font-size: 0.9em;
+    right: 28px;
+    position: relative;
 } 
 
 #search-results
@@ -1551,18 +1550,26 @@ main
 
 @media only screen and (max-width: 1279px) {
 
-    .blog-logo img {
-        width: 128px;
-        height: 128px;
-    }
-
     #sidebar, #site-header {
         position: relative;
-        text-align: center;
         width: 100%;
         height: auto;
         padding: 16px 0px;
         top: 0;
+    }
+
+    .blog-logo {
+        float: left;
+    }
+
+    .blog-logo img {
+        width: 80px;
+        height: auto;
+        margin: 0 8px 8px 0px;
+    }
+
+    .blog-title {
+        padding-top: 10px;
     }
 
     main {
