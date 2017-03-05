@@ -490,18 +490,9 @@ button {
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 .blog-logo img {
     display: block;
-    max-height: 100px;
-    width: auto;
-    margin: 0 auto 10px auto;
-    line-height: 0;
-    border:3px solid #fff;
-    border-radius:50%;
-    border-radius:50%;
-    max-height:100px;
-    -webkit-transition:opacity .3s ease-in-out;
-    transition:opacity .3s ease-in-out;
-    -webkit-box-shadow:0 0 3px 3px rgba(0,0,0,.3),inset 0 0 40px 2px rgba(0,0,0,.3);
-    box-shadow:0 0 3px 3px rgba(0,0,0,.3),inset 0 0 40px 2px rgba(0,0,0,.3);
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1em auto;
     -webkit-backface-visibility:hidden;
     -ms-backface-visibility:hidden;
     backface-visibility:hidden
@@ -1553,6 +1544,12 @@ main
 /* Media Queries for changing from Vertical to Horizontal cover               */
 
 @media only screen and (max-width: 1279px) {
+
+    .blog-logo img {
+        width: 128px;
+        height: 128px;
+    }
+
     #sidebar {
         position: relative;
         text-align: center;
@@ -1579,6 +1576,7 @@ main
         display: inline-block;
         margin: 0px 4px;
     }
+    
 }
 
 /* ========================================================================== */
@@ -1643,10 +1641,6 @@ main
 
 
 @media only screen and (max-width: 500px) {
-
-    .blog-logo img {
-        max-height: 80px;
-    }
 
     .inner,
     .pagination {
