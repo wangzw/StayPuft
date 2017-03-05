@@ -173,7 +173,7 @@ a {
 }
 
 a:hover {
-    color: #222;
+    color: red;
 }
 
 h1 a, h2 a, h3 a,
@@ -663,20 +663,20 @@ button {
     width: 320px;
     z-index: 100;
     background-color: #22313F;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     overflow-y: hidden;
 }
 
 #site-header
 {
     top: 0;
-    height: 366px;
+    height: 100%;
 }
 
 #sidebar
 {
-    top: 366px;
-    height: 100%;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 main
@@ -759,34 +759,51 @@ main
     color: #BBB;
 }
 
-
-#sidebar-links
-{
-    text-overflow: ellipsis;
-}
-
 #sidebar-links ul
 {
-    color: #BBC4C9;
-    font-size: 13px;
+    font-size: 14px;
     list-style: none inside none;
     padding: 0;
 }
 
-#sidebar-links i
+#sidebar-links li
 {
-    width: 20px;
-    font-size: 14px;
+    display: inline-block;
 }
 
 #sidebar-links a
 {
-    color: #BBC4C9;
     text-decoration: none;
+    color: white;
+}
+
+#sidebar-links i
+{
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    border-radius: 50%;
+    background: white;
+    color: #22313F;
+    transition: all 0.3s ease;
+    margin: 0 8px; /* good with text */
+}
+
+#sidebar-external i
+{
+    margin: 0 2px; /* good with no text */
 }
 
 #sidebar-links a:hover
 {
+    color: red;
+    
+}
+
+#sidebar-links a:hover i
+{
+    background: red;
     color: white;
 }
 
@@ -1579,11 +1596,6 @@ main
 
     .post {
         width: 100%;
-    }
-
-    #sidebar-links li {
-        display: inline-block;
-        margin: 0px 4px;
     }
 
     .pagination {
