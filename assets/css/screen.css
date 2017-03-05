@@ -1033,6 +1033,7 @@ main
 
 .post-cover {
     width: 100%;
+    margin-bottom: 1em;
 }
 
 .no-cover.post-head.main-header {
