@@ -22,7 +22,7 @@ This theme is being used in my [blog](http://davidlecina.com/).
 
 ## Compatibility
 
-**The current StayPuft version is 1.3.6, is tested against Ghost 0.11.4 and is expected to work with Ghost 0.9.0.**
+**The current StayPuft version is 1.3.6, is tested against Ghost 0.11.7 and is expected to work with Ghost 0.9.0.**
 
 If the current version of StayPuft is not compatible with the version of Ghost you're running, try looking for an older one in the [Releases section](https://github.com/dlecina/StayPuft/releases).
 
