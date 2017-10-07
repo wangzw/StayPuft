@@ -764,11 +764,15 @@ main
     font-size: 14px;
     list-style: none inside none;
     padding: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 #sidebar-links li
 {
-    display: inline-block;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 #sidebar-links a
@@ -781,6 +785,7 @@ main
 {
     width: 26px;
     height: 26px;
+    text-align: center;
     line-height: 26px;
     display: inline-block;
     border-radius: 50%;
@@ -790,9 +795,13 @@ main
     margin: 0 8px; /* good with text */
 }
 
+#sidebar-links img {
+    display: block;
+    margin: 0 auto;
+}
+
 #sidebar-external i
 {
-    margin: 0 2px; /* good with no text */
 }
 
 #sidebar-links a:hover
